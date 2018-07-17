@@ -37,6 +37,11 @@ var b2_1 = json.IsDefined("foooo"); // false
 var b1_2 = json.foo(); // true            
 var b2_2 = json.foooo(); // false;
 
+// Check Array has data
+var arrayJson = DynamicJson.Parse(@"[1,10,200,300]");
+var tmp = arrayJson.IsDefined(0);//true, index 0
+var tmp2 = arrayJosn.IsDefined(9);//false, index 9
+
 // Add
 json.Arr = new string[] { "NOR", "XOR" }; // Add Array
 json.Obj1 = new { }; // Add Object
