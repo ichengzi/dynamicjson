@@ -41,6 +41,7 @@ var b2_2 = json.foooo(); // false;
 var arrayJson = DynamicJson.Parse(@"[1,10,200,300]");
 var tmp = arrayJson.IsDefined(0);//true, index 0
 var tmp2 = arrayJosn.IsDefined(9);//false, index 9
+var tmp3 = arrayJson[0];// 1, get index0 value
 
 // Add
 json.Arr = new string[] { "NOR", "XOR" }; // Add Array
